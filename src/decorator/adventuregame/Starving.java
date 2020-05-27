@@ -1,19 +1,20 @@
 package decorator.adventuregame;
 
-public class Sword extends CharacterDecorator {
+public class Starving extends CharacterDecorator{
 
-    public Sword(GameCharacter character) {
+    public Starving(GameCharacter character) {
         // Call the constructor in the superclass (CharacterDecorator)
+        //Yeah I ctrl c + ctrl v'd this
         super(character);
     }
 
     @Override
     public String getName() {
-        return character.getName() + ", Sword-Eater";
+        return character.getName() + ", Starving";
     }
 
     @Override
     public double getMight() {
-        return character.getMight() + 10;
+        return character.getMight() - 20;
     }
 }

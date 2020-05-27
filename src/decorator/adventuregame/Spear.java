@@ -14,6 +14,6 @@ public class Spear extends CharacterDecorator {
 
     @Override
     public String getName() {
-        return character.getName() + ", Spear-Thrower";
+        return character.getName() + ", Spear-Swallower";
     }
 }
